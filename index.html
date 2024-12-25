@@ -3,55 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Инструкция</title>
+    <title>Инструкция к игре "Поле Чудес"</title>
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+        header {
+            background: #2a2a2a;
             padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            background: #333333;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         h1, h2 {
-            color: #ffcc00;
+            color: #ffffff;
         }
         a {
-            color: #bb86fc;
-        }
-        .button {
-            background-color: #bb86fc;
-            color: #121212;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #3700b3;
+            color: #1e90ff;
         }
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2a2a2a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Инструкция по запуску файла</h1>
-    <h2>Шаг 1: Установка .NET Framework</h2>
-    <p>Для запуска файла необходимо установить .NET Framework. Это можно сделать по ссылке:</p>
-    <p><a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.101-windows-x64-installer" target="_blank">Скачать .NET Framework</a></p>
+<header>
+    <h1>Инструкция к игре "Поле Чудес"</h1>
+</header>
 
-    <h2>Шаг 2: Скачивание файла</h2>
-    <p>Далее необходимо скачать файл.</p>
-
-    <h2>Шаг 3: Запуск игры</h2>
+<main>
+    <h2>Запуск игры</h2>
+    <p>Для запуска файла необходимо установить .NET Framework. Это можно сделать по ссылке: 
+    <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-9.0.101-windows-x64-installer" target="_blank">Скачать .NET Framework</a>.</p>
+    
+    <h2>Начало игры</h2>
+    <img src="image1.png" alt="Начало игры">
     <p>После открытия файла вы увидите следующее окно:</p>
-    <img src="placeholder.png" alt="Окно запуска игры">
+    <p>Для начала первого раунда игры нажмите на кнопку: <strong>“Начать игру”</strong>.</p>
+    <p>Каждый игрок по очереди крутит барабан, который может выпасть на разные сектора:</p>
+    <ul>
+        <li>Обычные очки</li>
+        <li>Сектор «+» – открыть символ и получить 100 очков.</li>
+        <li>Сектор «Переход хода» – пропустить ход.</li>
+    </ul>
     
-    <p>Для начала первого раунда игры нажмите на кнопку: <strong>”начать игру”</strong>.</p>
+    <h2>Игровой процесс</h2>
+    <img src="image2.png" alt="Игровой процесс">
+    <p>В строке «Слово: » загадано слово, которое игроки должны отгадать. Подсказка к загаданному слову находится в верхней части программы.</p>
+    <p>Слева находится таблица с балансом всех игроков. После успешного угадывания символа, очки зачисляются игроку.</p>
     
+    <h2>Результаты</h2>
+    <img src="image3.png" style="width: 300;height: auto;" alt="Результаты">
+    <p>Последний игрок, который ввел правильный символ, побеждает. Выводится окно с номером победившего игрока и количеством его очков.</p>
+    <p>После нажатия на кнопку «ОК» предлагается начать новую игру.</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 Игра "Поле Чудес". Все права защищены.</p>
+</footer>
+
 </body>
 </html>
